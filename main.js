@@ -3,10 +3,8 @@
 //var verb_url = "https://github.com/LaurentD87/laurentd87.github.io/blob/master/verbs.json"
 verb_url = './verbs.json'
 fetch(verb_url).then(function (response) { 
-    verbs = response.json()
+    return response.json()
+}).then(function (verbs) {
     console.log(verbs["puhua"])
-    
-
-    
 })
 
