@@ -1,7 +1,7 @@
-verb_url = 'http://127.0.0.1:8887/verbs_list.json'
+//verb_url = 'http://127.0.0.1:8887/verbs_list.json'
 
 
-
+verb_url = './verbs_list.json'
 
 fetch(verb_url).then(function (response) { 
     return response.json()
@@ -22,7 +22,7 @@ fetch(verb_url).then(function (response) {
             if (event.keyCode == 13) {
                 event.preventDefault()
                 answer = answerVerb.value 
-                if answer == 
+
             }
         })
     }
